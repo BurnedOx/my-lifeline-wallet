@@ -1,0 +1,41 @@
+.referral-link {
+    display: flex;
+    -webkit-box-align: center;
+    box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    font-size: 15px;
+    font-family: "Source Sans Pro";
+    line-height: 20px;
+    margin: 8px 0;
+    letter-spacing: 0.15px;
+    padding: 8px;
+    border: 1px solid #5e5e5ea2;
+    border-radius: 4px;
+    width: fit-content;
+
+    label {
+        margin-right: 8px;
+    }
+
+    a {
+        text-decoration: underline;
+        margin-right: 4px;
+        overflow-wrap: break-word;
+    }
+
+    span {
+        padding: 4px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 100%;
+    }
+}
