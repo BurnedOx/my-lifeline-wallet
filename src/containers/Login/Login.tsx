@@ -6,7 +6,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { useStore } from '../../utils/hooks';
 import { AuthContext } from '../../store';
 import { observer } from 'mobx-react-lite';
-import logo from '../../assets/logo.jpeg';
+import logo from '../../assets/logo.png';
 
 const layout = {
     labelCol: { span: 8 },

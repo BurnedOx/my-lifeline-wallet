@@ -25,7 +25,7 @@ const Cards: React.FC = () => {
     }, []);
 
     return (
-        <Row className={loading ? 'row cards-loading': 'row'} gutter={[16, 24]} style={{ background: '#f0f2f5' }}>
+        <Row className={'row'} gutter={[16, 24]}>
             <Col className="gutter-row" span={6}>
                 <Card
                     size="small"

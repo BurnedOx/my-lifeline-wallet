@@ -1,9 +1,55 @@
-.cards-loading {
+.row {
+    $initial-delay: 0.5s;
+    $increase-delay: 0.5s;
+    $total-cards: 10;
+
     .ant-card {
-        background: #ffffff !important;
+        background-image: url("../../assets/card.png");
+        background-size: cover;
+        color: #ffffff;
+
+        p {
+            font-weight: 700;
+            font-size: 24px;
+        }
 
         .ant-card-head {
-            background: #ffffff !important;
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+
+            a {
+                color: #ffffff;
+                font-weight: 700;
+            }
         }
+    }
+
+    @for $i from 1 through $total-cards {
+        &:nth-child(#{$i}) {
+            .ant-card {
+                animation-name: apear;
+                animation-duration: 0.5s;
+                animation-delay: $initial-delay + $i * $increase-delay;
+            }
+        }
+    }
+}
+
+.custom-card-title {
+    display: flex;
+    align-items: baseline;
+
+    span {
+        margin-right: 6px;
+    }
+}
+
+@keyframes apear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

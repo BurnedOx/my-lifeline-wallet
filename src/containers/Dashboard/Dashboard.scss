@@ -1,13 +1,15 @@
-.dashboard {
+.dash-cards {
+    max-width: 280px;
     .ant-card {
-        background: #003261 !important;
-        color: #ffffff;
+        background-image: url("../../assets/card.png");
+        background-size: cover;
 
         .ant-card-head {
-            background: #ffffff !important;
+            border-bottom: 1px solid #ffffff;
+            color: #ffffff;
         }
 
-        .ant-card-meta-title, .ant-card-meta-description {
+        .ant-card-meta-title, .ant-card-meta-description, .ant-statistic-title, p {
             color: #ffffff;
         }
     }

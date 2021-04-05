@@ -8,6 +8,7 @@
     "axios": "^0.19.2",
     "mobx": "^5.15.4",
     "mobx-react-lite": "^2.0.7",
+    "paytm-blink-checkout-react": "^0.0.2",
     "react": "^16.13.1",
     "react-copy-to-clipboard": "^5.0.2",
     "react-device-detect": "^1.12.1",
